@@ -83,7 +83,7 @@ Be sure to follow the configuration steps above and use this step-by-step guide 
 
 5. All the Twitter related action takes place in the file "get\_twitter\_details.py"
 
-6. Tweak away
+6. Tweak away!
 
 ## Problems?
 
