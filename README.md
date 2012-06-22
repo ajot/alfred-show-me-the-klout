@@ -1,4 +1,4 @@
-# What is "Show me the Klout"?
+alfred-show-me-the-klout# What is "Show me the Klout"?
 "Show me the Klout" is an [Alfred](http://www.alfredapp.com/) extension built using Python, that provides a quick way to know if someone is worth following on Twitter by providing critical information like their [Klout](http://klout.com) score, what's their follow vs following ratio, when did they join Twitter, number of followers, number of followings - all with a hit of a keystroke through the power of Alfred. It displays this info via a Growl notification.
 
 ## What is Alfred?
@@ -25,21 +25,21 @@ I don't know why I do that. I just do and I do it enough to encourage me to come
 3. [Twitter API Key](http://developer.twitter.com)
 4. [Tweepy](http://tweepy.github.com/) - A Python library for accessing the Twitter API
 5. [Growl](http://growl.info)
-5. [Nice and shiny Mac](http://www.youtube.com/results?search_query=get+a+mac) - Of course you have one!
+6. [Nice and shiny Mac](http://www.youtube.com/results?search_query=get+a+mac) - Of course you have one!
 
 ## How to Use
 
 1. Make sure Alfred is running. 
 2. Just hit your Alfred keyboard shortcut. In my case I have it configured it as **CMD + SPACE**. (The default is probably **ALT + SPACE**)
 
-	![Alfred Launch Bar](https://github.com/mashery/Alfred-Show-Me-The-Klout/raw/master/images/alfred_launch_bar.png)
+	![Alfred Launch Bar](https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/alfred_launch_bar.png)
 3. Type the keyword **ks** followed by a Twitter handle (You can change the keyword by editing the info.plist file)
 
-	![Alfred Launch Bar](https://github.com/mashery/Alfred-Show-Me-The-Klout/raw/master/images/alfred_launch_bar_fill.png)	
+	![Alfred Launch Bar](https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/alfred_launch_bar_fill.png)	
 	
 4. You get a Growl notification with all the info you'd ever need to judge someone's Twitter follow worth. Enjoy!
 
-	![Alfred Growl Notification](https://github.com/mashery/Alfred-Show-Me-The-Klout/raw/master/images/alfred_growl.png)
+	![Alfred Growl Notification](https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/alfred_growl.png)
 
 ## Examples ##
 	<pre>ks barackobama</pre>
@@ -49,7 +49,7 @@ I don't know why I do that. I just do and I do it enough to encourage me to come
 
 	
 1. Grab the latest source
-	<pre>git clone git://github.com/mashery/Alfred-Show-Me-The-Klout.git</pre>
+	<pre>git clone git://github.com/mashery/alfred-show-me-the-klout.git</pre>
 
 2. Copy the directory you just downloaded to -
 	<pre>~/Library/Application Support/Alfred/extensions/scripts</pre>
@@ -58,10 +58,10 @@ I don't know why I do that. I just do and I do it enough to encourage me to come
 
 4. Open the file "~/Library/Application Support/Alfred/extensions/scripts/Show Me The Klout/get\_klout\_score.py" and type in your Klout API key. Get your Klout API Key [here](http://developer.klout.com)
 
-	![Type your Klout API Key](https://github.com/mashery/Alfred-Show-Me-The-Klout/raw/master/images/klout_api_key.png)
+	![Type your Klout API Key](https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/klout_api_key.png)
 5. Open the file "Open the file "~/Library/Application Support/Alfred/extensions/scripts/Show Me The Klout/twitter_auth.py" and type in your Twitter API key. Get your Twitter API Key [here](http://developer.twitter.com)
 
-	![Type your Twitter API Key](https://github.com/mashery/Alfred-Show-Me-The-Klout/raw/master/images/twitter_api_key.png)
+	![Type your Twitter API Key](https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/twitter_api_key.png)
 6. Install Tweepy. Open Terminal and type the following (If you run into permission issues, try with sudo) -
 
 	<pre>easy_install tweepy</pre>
@@ -74,7 +74,7 @@ I don't know why I do that. I just do and I do it enough to encourage me to come
 Be sure to follow the configuration steps above and use this step-by-step guide to tweak to your heart's content.
 
 1. Grab the latest source
-	<pre>git clone git://github.com/mashery/Alfred-Show-Me-The-Klout.git</pre>
+	<pre>git clone git://github.com/mashery/alfred-show-me-the-klout.git</pre>
 
 2. Install Tweepy. Open Terminal and type the following (If you run into permission issues, try with sudo) -
 	<pre>easy_install tweepy</pre>
