@@ -3,42 +3,85 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>alfred-show-me-the-klout by Mashery</title>
+    <title>Show Me the Klout - An Alfred App extension from Mashery</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+	<!-- overriding with Bootstrap and mashery-tools.css -->
+	<link href="http://mashery.github.com/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://mashery.github.com/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://mashery.github.com/assets/css/docs.css" rel="stylesheet">
+    <link href="http://mashery.github.com/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+	<link href="http://mashery.github.com/assets/css/mashery-tools.css" rel="stylesheet">
+	
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="tool-details-page">
     <div class="wrapper">
+
+		<!-- BEGIN mashery navigation bar -->
+		<div class="navbar navbar-fixed-top">
+		      <div class="navbar-inner">
+		        <div class="container">
+				<div id="logo"><img src="http://mashery.github.com/assets/img/mashery-logo.png" class="bs-icon"></div>
+
+		          <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		          <!-- <a class="brand" href="./index.html">Bootstrap</a> -->
+		          <div class="nav-collapse collapse">
+		            <ul class="nav">
+		              <li class="">
+		                <a href="http://dev.mashery.com">Home</a>
+		              </li>
+		              <li class="">
+		                <a href="http://dev.mashery.com/apis">APIs</a>
+		              </li>
+		              <li class="active">
+		                <a href="http://mashery.github.com">Tools</a>
+		              </li>
+		              <li class="">
+		                <a href="http://mashery.appstores.com">Apps</a>
+		              </li>
+		              <li class="">
+		                <a href="http://masherydev.tumblr.com">Blog</a>
+		              </li>
+		            </ul>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		<!-- END mashery navigation bar -->
+		
       <header>
-        <h1>Alfred-show-me-the-klout</h1>
-        <p>An Alfred Extension</p>
-
-        <p class="view"><a href="https://github.com/mashery/alfred-show-me-the-klout">View the Project on GitHub <small>Mashery/alfred-show-me-the-klout</small></a></p>
-
+        <h1>Show Me the Klout</h1>
+        <p>An Alfred app extension</p>
 
         <ul>
           <li><a href="https://github.com/mashery/alfred-show-me-the-klout/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/mashery/alfred-show-me-the-klout/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/mashery/alfred-show-me-the-klout">View On <strong>GitHub</strong></a></li>
         </ul>
+
+		<p><a href="https://github.com/mashery/alfred-show-me-the-klout" class="btn btn-primary btn-large" >View Project on GitHub</a></p>
       </header>
       <section>
-        <h1>What is "Show me the Klout"?</h1>
+        <h1>What is Show Me the Klout?</h1>
 
-<p>"Show me the Klout" is an <a href="http://www.alfredapp.com/">Alfred</a> extension built using Python, that provides a quick way to know if someone is worth following on Twitter by providing critical information like their <a href="http://klout.com">Klout</a> score, what's their follow vs following ratio, when did they join Twitter, number of followers, number of followings - all with a hit of a keystroke through the power of Alfred. It displays this info via a Growl notification.</p>
+<p><strong>Show me the Klout</strong> is an <a href="http://www.alfredapp.com/">Alfred</a> extension built using Python, that provides a quick way to know if someone is worth following on Twitter by providing critical information like their <a href="http://klout.com">Klout</a> score, what's their follow vs following ratio, when did they join Twitter, number of followers, number of followings - all with a hit of a keystroke through the power of Alfred. It displays this info via a Growl notification.</p>
 
-<h2>What is Alfred?</h2>
+<hr class="soften"><h2>What is Alfred?</h2>
 
 <p><a href="http://alfredapp.com">Alfred</a> is an award-winning productivity application for Mac OS X, which aims to save you time in searching your local computer and the web. Whether it's maps, Amazon, eBay, Wikipedia, you can feed your web addiction quicker than ever.</p>
 
 <p>The real power of Alfred lies in it's <a href="http://www.alfredapp.com/powerpack/">powerpack</a> that allows you to create your very own Terminal shell scripts, AppleScripts, workflows, search filters and file groups to extend Alfred.</p>
 
-<h2>Summary</h2>
+<hr class="soften"><h2>Summary</h2>
 
 <p>So, you met someone new at an event or found some one interesting on the inter-webs. What's the first thing you do? Find them on Twitter. Analyze if they're worth following. How do you do that? Every time, I meet some one new, there are somethings I wanna know about them to judge if they're worth following - </p>
 
@@ -48,9 +91,9 @@
 <li>What's their Follow vs Following ratio? (This is important to me. A ratio of less than 1 tells me, you're either not active on Twitter or are a spammer. Either way, probably not worth a follow.) </li>
 <li>Number of Followers</li>
 <li>Number of Followings</li>
-</ol><p>I don't know why I do that. I just do and I do it enough to encourage me to come up with a simpler and faster process than look up people's profiles each time on Twitter.com or a Twitter client. "Show me the Klout" does just that, with just a keystroke. So, you know quickly if this person is worth a follow.</p>
+</ol><p>I don't know why I do that. I just do and I do it enough to encourage me to come up with a simpler and faster process than look up people's profiles each time on Twitter.com or a Twitter client. <strong>Show Me the Klout</strong> does just that, with just a keystroke. So, you know quickly if this person is worth a follow.</p>
 
-<h2>Requirements</h2>
+<hr class="soften"><h2>Requirements</h2>
 
 <ol>
 <li>
@@ -63,7 +106,7 @@
 <li><a href="http://growl.info">Growl</a></li>
 <li>
 <a href="http://www.youtube.com/results?search_query=get+a+mac">Nice and shiny Mac</a> - Of course you have one!</li>
-</ol><h2>How to Use</h2>
+</ol><hr class="soften"><h2>How to Use</h2>
 
 <ol>
 <li>Make sure Alfred is running. </li>
@@ -82,13 +125,13 @@
 
 <p><img src="https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/alfred_growl.png" alt="Alfred Growl Notification"></p>
 </li>
-</ol><h2>Examples</h2>
+</ol><hr class="soften"><h2>Examples</h2>
 
 <pre><code>&lt;pre&gt;ks barackobama&lt;/pre&gt;
 &lt;pre&gt;ks scobleizer&lt;/pre&gt;
 </code></pre>
 
-<h2>Installation</h2>
+<hr class="soften"><h2>Installation</h2>
 
 <ol>
 <li>
@@ -118,7 +161,7 @@
 <pre>easy_install tweepy</pre>
 </li>
 <li><p>You're done. Just give Alfred a whirl now. Refer <a href="#how-to-use">How to Use</a> above.</p></li>
-</ol><h2>Development</h2>
+</ol><hr class="soften"><h2>Development</h2>
 
 <p>Be sure to follow the configuration steps above and use this step-by-step guide to tweak to your heart's content.</p>
 
@@ -136,7 +179,7 @@
 <li><p>All the Klout related action takes place in the file 'get_klout_score.py'</p></li>
 <li><p>All the Twitter related action takes place in the file "get_twitter_details.py"</p></li>
 <li><p>Tweak away</p></li>
-</ol><h2>Problems?</h2>
+</ol><hr class="soften"><h2>Problems?</h2>
 
 <ul>
 <li>
@@ -147,17 +190,18 @@
     help('modules')
 </pre>
 </li>
-</ul><h2>About</h2>
+</ul><hr class="soften">
+
+<h2>About</h2>
 
 <ul>
-<li>No warranty expressed or implied.  Software is as is.</li>
-<li><a href="http://www.opensource.org/licenses/mit-license.html">MIT License</a></li>
-<li>Lovingly created by <a href="http://dev.mashery.com">Mashery Dev</a>
-</li>
+	<li>Lovingly created by <a href="http://dev.mashery.com">Mashery</a>.</li>
+	<li>No warranty expressed or implied. Software as is.</li>
+	<li>Provided under <a href="http://www.opensource.org/licenses/mit-license.html">MIT License</a></li>
 </ul>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/mashery">Mashery</a></p>
+		<p>Check out more open-source tools from Mashery on <a href="http://mashery.github.com">Github</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
