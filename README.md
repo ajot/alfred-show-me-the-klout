@@ -1,4 +1,4 @@
-alfred-show-me-the-klout# What is "Show me the Klout"?
+# What is "Show me the Klout"?
 "Show me the Klout" is an [Alfred](http://www.alfredapp.com/) extension built using Python, that provides a quick way to know if someone is worth following on Twitter by providing critical information like their [Klout](http://klout.com) score, what's their follow vs following ratio, when did they join Twitter, number of followers, number of followings - all with a hit of a keystroke through the power of Alfred. It displays this info via a Growl notification.
 
 ## What is Alfred?
@@ -21,7 +21,7 @@ I don't know why I do that. I just do and I do it enough to encourage me to come
 ## Requirements
 
 1. [Alfred](http://www.alfredapp.com/) + [Alfred Powerpack](http://www.alfredapp.com/powerpack/)
-2. [Klout API Key](http://developer.klout.com)
+2. [Klout v2 API Key](http://developer.klout.com) - Make sure you get the API key for v2
 3. [Twitter API Key](http://developer.twitter.com)
 4. [Tweepy](http://tweepy.github.com/) - A Python library for accessing the Twitter API
 5. [Growl](http://growl.info)
@@ -52,7 +52,7 @@ I don't know why I do that. I just do and I do it enough to encourage me to come
 	<pre>git clone git://github.com/mashery/alfred-show-me-the-klout.git</pre>
 
 2. Copy the directory you just downloaded to -
-	<pre>~/Library/Application Support/Alfred/extensions/scripts</pre>
+	<pre>~/Library/Application\ Support/Alfred/extensions/scripts</pre>
 
 3. Rename this directory to say "Show me the Klout"	
 
