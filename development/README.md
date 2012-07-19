@@ -48,7 +48,7 @@ I don't know why I do that. I just do and I do it enough to encourage me to come
 ## Installation
 
 	
-1. Download the extension [here](https://github.com/mashery/alfred-show-me-the-klout/raw/master/Show%20me%20the%20Klout.alfredextension) 
+1. Download the extension [here](https://github.com/mashery/alfred-show-me-the-klout/raw/master/Show%20me%20the%20Klout.zip) 
 
 2. Double click on the .alfredextension file you just download. The extension will install and open up the preferences window in Alfred.
 
