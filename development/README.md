@@ -32,14 +32,14 @@ I don't know why I do that. I just do and I do it enough to encourage me to come
 1. Make sure Alfred is running. 
 2. Just hit your Alfred keyboard shortcut. In my case I have it configured it as **CMD + SPACE**. (The default is probably **ALT + SPACE**)
 
-	![Alfred Launch Bar](https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/alfred_launch_bar.png)
+	![Alfred Launch Bar](https://github.com/mashery/alfred-show-me-the-klout/raw/master/development/images/alfred_launch_bar.png)
 3. Type the keyword **ks** followed by a Twitter handle (You can change the keyword by editing the info.plist file)
 
-	![Alfred Launch Bar](https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/alfred_launch_bar_fill.png)	
+	![Alfred Launch Bar](https://github.com/mashery/alfred-show-me-the-klout/raw/master/development/images/alfred_launch_bar_fill.png)	
 	
 4. You get a Growl notification with all the info you'd ever need to judge someone's Twitter follow worth. Enjoy!
 
-	![Alfred Growl Notification](https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/alfred_growl.png)
+	![Alfred Growl Notification](https://github.com/mashery/alfred-show-me-the-klout/raw/master/development/images/alfred_growl.png)
 
 ## Examples ##
 	<pre>ks barackobama</pre>
@@ -56,10 +56,10 @@ I don't know why I do that. I just do and I do it enough to encourage me to come
 
 4. Open the file "get\_klout\_score.py" and type in your Klout API key. Get your Klout API Key [here](http://developer.klout.com)
 
-	![Type your Klout API Key](https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/klout_api_key.png)
+	![Type your Klout API Key](https://github.com/mashery/alfred-show-me-the-klout/raw/master/development/images/klout_api_key.png)
 5. Open the file "twitter_auth.py" and type in your Twitter API key. Get your Twitter API Key [here](http://developer.twitter.com)
 
-	![Type your Twitter API Key](https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/twitter_api_key.png)
+	![Type your Twitter API Key](https://github.com/mashery/alfred-show-me-the-klout/raw/master/development/images/twitter_api_key.png)
 6. Install Tweepy. Open Terminal and type the following (If you run into permission issues, try with sudo) -
 
 	<pre>easy_install tweepy</pre>
