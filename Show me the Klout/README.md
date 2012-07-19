@@ -48,18 +48,16 @@ I don't know why I do that. I just do and I do it enough to encourage me to come
 ## Installation
 
 	
-1. Grab the latest source
-	<pre>git clone git://github.com/mashery/alfred-show-me-the-klout.git</pre>
+1. Download the extension [here](https://github.com/mashery/alfred-show-me-the-klout/raw/master/Show%20me%20the%20Klout.alfredextension) 
 
-2. Copy the directory you just downloaded to -
-	<pre>~/Library/Application\ Support/Alfred/extensions/scripts</pre>
+2. Double click on the .alfredextension file you just download. The extension will install and open up the preferences window in Alfred.
 
-3. Rename this directory to say "Show me the Klout"	
+3. Right click on the extension on the left side bar in Alfred (Extension tab) and click on "Show in Finder". The source files for the extension will open up in Finder. 
 
-4. Open the file "~/Library/Application Support/Alfred/extensions/scripts/Show Me The Klout/get\_klout\_score.py" and type in your Klout API key. Get your Klout API Key [here](http://developer.klout.com)
+4. Open the file "get\_klout\_score.py" and type in your Klout API key. Get your Klout API Key [here](http://developer.klout.com)
 
 	![Type your Klout API Key](https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/klout_api_key.png)
-5. Open the file "Open the file "~/Library/Application Support/Alfred/extensions/scripts/Show Me The Klout/twitter_auth.py" and type in your Twitter API key. Get your Twitter API Key [here](http://developer.twitter.com)
+5. Open the file "twitter_auth.py" and type in your Twitter API key. Get your Twitter API Key [here](http://developer.twitter.com)
 
 	![Type your Twitter API Key](https://github.com/mashery/alfred-show-me-the-klout/raw/master/images/twitter_api_key.png)
 6. Install Tweepy. Open Terminal and type the following (If you run into permission issues, try with sudo) -
