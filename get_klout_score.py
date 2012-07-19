@@ -1,14 +1,14 @@
 #! /usr/bin/python
 
+# Get your Klout API Key from http://developer.klout.com
+klout_key = "your_klout_api_key"
+
 from encodings import hex_codec
 from encodings import ascii
 import httplib,urllib2
 import json
 import sys
 import get_twitter_details
-
-# Get your Klout API Key from http://developer.klout.com
-klout_key = "your_klout_api_key"
 
 def print_stuff(klout_score):
 	name,friends_count,followers_count,ff_ratio,created_at = get_twitter_details.get_details(twitter_handle)
